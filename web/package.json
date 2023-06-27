@@ -1,0 +1,52 @@
+{
+	"name": "@esinx.webstack/web",
+	"version": "0.0.0",
+	"type": "module",
+	"prettier": "@esinx/prettier-config",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build --outDir build",
+		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@aws-amplify/auth": "^5.5.0",
+		"@aws-amplify/core": "^5.5.0",
+		"@emotion/react": "^11.11.1",
+		"@hookform/resolvers": "^3.1.1",
+		"@mantine/core": "^6.0.14",
+		"@mantine/hooks": "^6.0.14",
+		"@mantine/notifications": "^6.0.14",
+		"@tanstack/react-query": "^4.29.14",
+		"@trpc/client": "^10.31.0",
+		"@trpc/react-query": "^10.31.0",
+		"@trpc/server": "^10.32.0",
+		"amazon-cognito-identity-js": "^6.3.0",
+		"cross-fetch": "^3.1.6",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.45.0",
+		"react-router-dom": "^6.13.0",
+		"superjson": "^1.12.3",
+		"zod": "^3.21.4",
+		"zustand": "^4.3.8"
+	},
+	"devDependencies": {
+		"@esinx/eslint-config": "^1.0.4",
+		"@esinx/prettier-config": "^1.0.0-3",
+		"@swc/plugin-emotion": "^2.5.68",
+		"@types/react": "^18.0.37",
+		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.59.0",
+		"@typescript-eslint/parser": "^5.59.0",
+		"@vitejs/plugin-react-swc": "^3.0.0",
+		"eslint": "^8.38.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.3.4",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"eslint-plugin-unused-imports": "^2.0.0",
+		"typescript": "^5.0.2",
+		"vite": "^4.3.9",
+		"vite-tsconfig-paths": "^4.2.0"
+	}
+}

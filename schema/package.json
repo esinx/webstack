@@ -1,0 +1,35 @@
+{
+	"name": "@esinx.webstack/schema",
+	"packageManager": "yarn@3.6.0",
+	"prettier": "@esinx/prettier-config",
+	"version": "0.0.1",
+	"scripts": {
+		"build": "swc ./src  --config-file ./.swcrc --out-dir ./build",
+		"build:types": "tsc",
+		"watch:build": "swc ./src  --config-file ./.swcrc --out-dir ./build --watch",
+		"schema:generate": "drizzle generate:pg",
+		"schema:up": "ts-node -r tsconfig-paths/register ./src/migrator",
+		"schema:sync": "yarn schema:generate && yarn migration:up"
+	},
+	"devDependencies": {
+		"@esinx/eslint-config": "^1.0.4",
+		"@esinx/prettier-config": "^1.0.0-3",
+		"@swc/cli": "^0.1.62",
+		"@swc/core": "^1.3.49",
+		"@types/node": "^20.3.1",
+		"drizzle-kit": "^0.19.2",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"eslint-plugin-unused-imports": "^2.0.0",
+		"nodemon": "^2.0.22",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.27.0",
+		"postgres": "^3.3.5"
+	},
+	"nodemonConfig": {
+		"delay": 2500
+	}
+}

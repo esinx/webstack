@@ -1,0 +1,38 @@
+{
+	"name": "@esinx.webstack/app",
+	"version": "1.0.0",
+	"author": "esinx",
+	"license": "MIT",
+	"private": true,
+	"packageManager": "yarn@3.6.0",
+	"prettier": "@esinx/prettier-config",
+	"scripts": {
+		"tunnel": "frpc -c ./frpc.ini"
+	},
+	"workspaces": {
+		"packages": [
+			"services/*",
+			"web",
+			"schema",
+			"migrator",
+			"cdk"
+		]
+	},
+	"devDependencies": {
+		"@esinx/eslint-config": "^1.0.4",
+		"@esinx/prettier-config": "^1.0.0-3",
+		"@types/eslint": "^8",
+		"@types/prettier": "^2",
+		"eslint": "^8.43.0",
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.3"
+	},
+	"dependenciesMeta": {
+		"drizzle-kit@0.19.2": {
+			"unplugged": true
+		},
+		"ts-node@10.9.1": {
+			"unplugged": true
+		}
+	}
+}
