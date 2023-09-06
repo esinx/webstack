@@ -7,10 +7,7 @@
 	"scripts": {
 		"build": "swc ./src  --config-file ./.swcrc --out-dir ./build",
 		"build:types": "tsc",
-		"watch:build": "swc ./src  --config-file ./.swcrc --out-dir ./build --watch",
-		"schema:generate": "drizzle generate:pg",
-		"schema:up": "ts-node -r tsconfig-paths/register ./src/migrator",
-		"schema:sync": "yarn schema:generate && yarn migration:up"
+		"watch:build": "swc ./src  --config-file ./.swcrc --out-dir ./build --watch"
 	},
 	"devDependencies": {
 		"@esinx/eslint-config": "^1.0.4",
