@@ -3,6 +3,7 @@
 	"packageManager": "yarn@3.6.0",
 	"prettier": "@esinx/prettier-config",
 	"version": "0.0.1",
+	"main": "build/index.js",
 	"scripts": {
 		"build": "swc ./src  --config-file ./.swcrc --out-dir ./build",
 		"build:types": "tsc",
